@@ -1,26 +1,26 @@
 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center mt-5">
   <div class="w-50 h-100">
     <div class="d-flex justify-content-between mb-3">
-      <h3>Sabores</h3>
-      <button type="button" (click)="adicionar(cadastro)" class="btn btn-success">CADASTRAR</button>
-    </div>
-    <table class="table table-striped tabel-bordered w-100">
+      <h3>LISTA DE SABORES</h3>
+      <button type="button" (click)="adicionar(cadastro)" class="btn btn-success botao_cad">CADASTRAR</button>
+    </div><br><br>
+    <table class="table  tabel-bordered w-100">
       <thead>
         <tr>
-          <th scope="col">id</th>
-          <th scope="col">Nome do Sabor</th>
-          <th scope="col">Lista de Ingredientes</th>
+          <th scope="col">ID</th>
+          <th scope="col">SABOR</th>
+          <th scope="col">IGREDIENTES</th>
           <th d-flex justify-center scope="col">Opção</th>
         </tr>
-      </thead>
+      </thead><br>
       <tbody>
         <tr *ngFor="let sabor of lista; let i = index">
           <th scope="row">{{ sabor.id }}</th>
           <td>{{ sabor.nome }}</td>
           <td>{{ sabor.componentes }}</td>
           <td>
-            <button class="btn btn-primary" (click)="editar(cadastro , sabor, i)">Editar</button> -
-            <button class="btn btn-danger" (click)="delete(sabor.id)">Deletar</button>
+            <button class="btn btn-primary editar" (click)="editar(cadastro , sabor, i)">EDITAR</button> -
+            <button class="btn btn-danger exclui" (click)="delete(sabor.id)">DELETAR</button>
           </td>
         </tr>
       </tbody>

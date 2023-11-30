@@ -1,17 +1,17 @@
 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center mt-5">
-  <div class="w-50 h-100">
+  <div class="w-50 h-100 ">
     <div class="d-flex justify-content-between mb-3 ab" >
-      <h3>PEDIDOS 🛒</h3>  
+      <h3>LISTA DE PEDIDOS</h3>  
       <button type="button" (click)="adicionar(form)" class="btn btn-success botao_cad">CADASTRAR</button>
-    </div>
-    <table class="table table-striped tabel-bordered w-100">
-      <thead>
+    </div><br><br>
+    <table class="table   w-100">
+      <thead >
         <tr>
           <th scope="col">ID</th>
           <th scope="col">NOME</th>
           <th scope="col">OPÇÃO</th>
         </tr>
-      </thead>
+      </thead><br>
       <tbody>
         <tr *ngFor="let pedido of lista; let i = index">
           <th scope="row">{{ pedido.id }}</th>

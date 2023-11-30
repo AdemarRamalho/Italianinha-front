@@ -6,11 +6,18 @@ ul{
     gap: 10px;
 }
 a{
-    color: black !important;
+    color: rgb(0, 0, 0) !important;
+    
 }
+a:hover{
+    background-color: rgb(243, 105, 105);
+    border-radius: 5px;
+}
+
 .navbar{
-    background-color: rgb(219, 213, 213);
+    background-color: rgb(241, 241, 120);
 }
 .hea{
-    background-color: rgb(239, 153, 153);
+    background-color: rgb(131, 52, 52);
+
 }

@@ -7,22 +7,22 @@
             <div class="d-flex align-items-center a">
                 <label for="rua">Rua</label> :
                 <input type="text" [(ngModel)]="endereco.rua" name="rua" class="form-control" id="tamanho"
-                    placeholder="Tamnaho do seu rua"><br>
+                    placeholder="Rua 4"><br>
             </div>
             <div class="d-flex align-items-center a">
-                <label for="bairro">Bairro</label> :
+                <label for="bairro">Bairro</label>  :
                 <input type="text" [(ngModel)]="endereco.bairro" name="bairro" class="form-control" id="tamanho"
-                    placeholder="Tamnaho do seu bairro"><br>
+                    placeholder="Centro"><br>
             </div>
             <div class="d-flex align-items-center a">
-                <label for="numero">Numero</label> :
+                <label for="numero">Numero</label>  :
                 <input type="number" [(ngModel)]="endereco.numero" name="numero" class="form-control" id="tamanho"
-                    placeholder="Tamnaho do seu numero"><br>
+                    placeholder="999"><br>
             </div>
             <div class="d-flex align-items-center a">
-                <label for="cep">CEP</label> :
+                <label for="cep">CEP</label>  :
                 <input type="text" [(ngModel)]="endereco.cep" name="cep" class="form-control" id="tamanho"
-                    placeholder="Tamnaho do seu procepduto">
+                    placeholder="65.059-98">
             </div>
         </div>
         <button *ngIf="endereco.id == null" type="button" (click)="create()" class="w-30 btn btn-success">Cadastrar</button>

@@ -1,20 +1,20 @@
 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center mt-5">
   <div class="w-50 h-100">
     <div class="d-flex justify-content-between mb-3">
-      <h3>Pruduto</h3>
-      <button type="button" (click)="adicionar(cadastro)" class="btn btn-success">CADASTRAR</button>
-    </div>
-    <table class="table table-striped w-100">
+      <h3>LISTA DE PRODUTO</h3>
+      <button type="button" (click)="adicionar(cadastro)" class="btn btn-success botao_cad">CADASTRAR</button>
+    </div><br><br>
+    <table class="table  w-100">
       <thead>
         <tr>
-          <th scope="col">id</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Categoria</th>
-          <th scope="col">disponivel</th>
-          <th scope="col">tempo Preparo</th>
-          <th d-flex justify-center scope="col">Opção</th>
+          <th scope="col">ID</th>
+          <th scope="col">NOME</th>
+          <th scope="col">CATEGORIA</th>
+          <th scope="col">DISPONIVEL</th>
+          <th scope="col">TEMPO DE PREPARO</th>
+          <th d-flex justify-center scope="col">OPÇÃO</th>
         </tr>
-      </thead>
+      </thead><br>
       <tbody>
         <tr *ngFor="let produto of lista; let i = index">
           <th scope="row">{{ produto.id }}</th>
@@ -23,8 +23,8 @@
           <td>{{ produto.disponivel }}</td>
           <td>{{ produto.tempoPreparo }} Minutos</td>
           <td>
-            <button class="btn btn-primary" (click)="editar(cadastro , produto, i)">Editar</button> -
-            <button class="btn btn-danger" (click)="delete(produto.id)">Deletar</button>
+            <button class="btn btn-primary editar" (click)="editar(cadastro , produto, i)">EDITAR</button> -
+            <button class="btn btn-danger exclui" (click)="delete(produto.id)">DELETAR</button>
           </td>
         </tr>
       </tbody>

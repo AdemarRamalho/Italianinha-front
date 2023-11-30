@@ -1,27 +1,27 @@
 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center mt-5">
   <div class="w-50 h-100">
     <div class="d-flex justify-content-between mb-3">
-      <h3>Cliente</h3>
-      <button type="button" (click)="adicionar(form)" class="btn btn-success">CADASTRAR</button>
-    </div>
-    <table class="table table-striped tabel-bordered w-100">
+      <h3>LISTA DE CLIENTE</h3> 
+      <button type="button" (click)="adicionar(form)" class="btn btn-success botao_cad">CADASTRAR</button>
+    </div><br><br>
+    <table class="table t  w-100">
       <thead>
         <tr>
-          <th scope="col">id</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Senha</th>
-          <th scope="col">Opção</th>
+          <th scope="col">ID</th>
+          <th scope="col">NOME</th>
+          <th scope="col">SENHA</th>
+          <th scope="col">OPÇÃO</th>
         </tr>
-      </thead>
+      </thead><br>
       <tbody>
         <tr *ngFor="let cliente of lista; let i = index">
           <th scope="row">{{ cliente.id }}</th>
           <td>{{ cliente.username }}</td>
           <td>**********</td>
           <td>
-            <button class="btn btn-primary" (click)="editar(form, cliente, i)">Editar</button> -
-            <button class="btn btn-danger" (click)="delete(cliente.id)">Deletar</button> -
-            <button class="btn btn-outline-secondary" (click)="adicionar(info)" (click)="findById(cliente.id)">..</button>
+            <button class="btn btn-primary editar" (click)="editar(form, cliente, i)">EDITAR</button> -
+            <button class="btn btn-danger exclui" (click)="delete(cliente.id)">DELETAR</button> -
+            <button class="btn btn-outline-secondary" (click)="adicionar(info)" (click)="findById(cliente.id)">⚙️</button>
 
           </td>
         </tr>
