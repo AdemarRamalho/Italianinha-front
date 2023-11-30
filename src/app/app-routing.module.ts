@@ -13,7 +13,7 @@ import { rotaGuardGuard } from './GUARDS/rota-guard.guard';
 const routes: Routes = [
   { path: "", redirectTo: "login", pathMatch: "full" },
   {path: "login",component: SignInComponent},
-  { path: "admin", component: AdmIndexComponent, canActivate: [rotaGuardGuard], children: [
+  { path: "admin", component: AdmIndexComponent, children: [
     {path : "atributo-adm" , component: AtributoListComponent},
     {path : "cliente-adm" , component: ClienteListComponent},
     {path : "endereco-adm" , component: EnderecoListComponent},
