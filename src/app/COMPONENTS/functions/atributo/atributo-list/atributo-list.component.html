@@ -1,17 +1,17 @@
 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center mt-5">
   <div class="w-50 h-100">
     <div class="d-flex justify-content-between mb-3">
-      <h3>Lista de Atributo</h3>
-      <button type="button" (click)="adicionar(cadastro)" class="btn btn-success">CREATE</button>
+      <h3>Tipo</h3>
+      <button type="button" (click)="adicionar(cadastro)" class="btn btn-success">CADASTRAR</button>
     </div>
-    <table class="table table-striped w-100">
+    <table class="table table-striped tabel-bordered w-100">
       <thead>
         <tr>
           <th scope="col">id</th>
           <th scope="col">Tamanho</th>
           <th scope="col">descricao</th>
           <th scope="col">Preço</th>
-          <th scope="col">Ação</th>
+          <th scope="col">Opção</th>
         </tr>
       </thead>
       <tbody>
@@ -33,7 +33,7 @@
 
 <ng-template #cadastro let-modal>
   <div class="modal-header">
-    <h4 class="modal-title"> Atributo</h4>
+    <h4 class="modal-title">Tipo</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">

@@ -1,16 +1,16 @@
 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center mt-5">
   <div class="w-50 h-100">
     <div class="d-flex justify-content-between mb-3">
-      <h3>Lista de Cliente</h3>
-      <button type="button" (click)="adicionar(form)" class="btn btn-success">CREATE</button>
+      <h3>Cliente</h3>
+      <button type="button" (click)="adicionar(form)" class="btn btn-success">CADASTRAR</button>
     </div>
-    <table class="table table-striped w-100">
+    <table class="table table-striped tabel-bordered w-100">
       <thead>
         <tr>
           <th scope="col">id</th>
           <th scope="col">Nome</th>
-          <th scope="col">Password</th>
-          <th scope="col">Ação</th>
+          <th scope="col">Senha</th>
+          <th scope="col">Opção</th>
         </tr>
       </thead>
       <tbody>
@@ -33,7 +33,7 @@
 
 <ng-template #form let-modal>
   <div class="modal-header">
-    <h4 class="modal-title"> Pessoa</h4>
+    <h4 class="modal-title">Pessoa</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">
@@ -43,7 +43,7 @@
 
 <ng-template #info let-modal>
   <div class="modal-header">
-    <h4 class="modal-title"> Endereco Cliente</h4>
+    <h4 class="modal-title">Endereco Cliente</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">
