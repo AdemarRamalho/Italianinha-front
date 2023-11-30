@@ -1,15 +1,15 @@
 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center mt-5">
   <div class="w-50 h-100">
     <div class="d-flex justify-content-between mb-3 ab" >
-      <h3>Cliente Para Pedidos</h3>  
-      <button type="button" (click)="adicionar(form)" class="btn btn-success">CADASTRAR</button>
+      <h3>PEDIDOS 🛒</h3>  
+      <button type="button" (click)="adicionar(form)" class="btn btn-success botao_cad">CADASTRAR</button>
     </div>
     <table class="table table-striped tabel-bordered w-100">
       <thead>
         <tr>
-          <th scope="col">id</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Opção</th>
+          <th scope="col">ID</th>
+          <th scope="col">NOME</th>
+          <th scope="col">OPÇÃO</th>
         </tr>
       </thead>
       <tbody>
@@ -18,9 +18,9 @@
           <td>{{ pedido.cliente.username }}</td>
           <td>
             <button class="btn btn-outline-secondary" (click)="selectPedido(pedido.id)"
-              (click)="adicionar(Carrinho)">🛒</button>-
+              (click)="adicionar(Carrinho)">PEDIDOS</button>-
 
-            <button class="btn btn-outline-primary" (click)="adicionar(info)" (click)="go(pedido.id)">Info</button>
+            <button class="btn btn-outlfne-primary info-button" (click)="adicionar(info)" (click)="go(pedido.id)">INFO</button>
         </tr>
       </tbody>
     </table>
@@ -40,7 +40,7 @@
 
 <ng-template #Carrinho let-modal>
   <div class="modal-header">
-    <h4 class="modal-title">Pessoa </h4>
+    <h4 class="modal-title">Pedido</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">

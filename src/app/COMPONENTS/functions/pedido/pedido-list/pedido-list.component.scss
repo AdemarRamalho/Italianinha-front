@@ -4,3 +4,21 @@
 .ab {
     gap: 80px   ;
 }
+.botao_cad{
+    background-color:rgb(30, 213, 30);
+    border-color: rgb(30, 213, 30);
+  
+}
+.botao_cad:hover{
+   background-color:  rgb(129, 241, 144);
+   border-color:rgb(122, 246, 139) ;
+   color: black;
+}
+.info-button{
+    background-color: rgb(216, 7, 7);
+    color: white;
+}
+.info-button:hover{
+    background-color: rgb(250, 116, 116);
+    color: black;
+}
